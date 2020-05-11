@@ -211,7 +211,6 @@ function chessdesk(figurTable, figure) {
                                         } else {
                                             if (pathCheck(beg, end)) { // пешка ходит
                                                 pawnMove = 1;
-                                                console.log(end[1]);
                                                 if (end[1] == 1) {
                                                     figure = uglyDuck();
                                                 }
@@ -372,7 +371,6 @@ function castling(beg, end){
             if (confirm("Сделать рокировку?")){
                 figurTable[0][5] = '';
                 figurTable[0][3] = '♚';
-                console.log(figurTable[0][3]);
             }
         }
     } else if (beg[1] == 1 && beg[2] == 8 && end[1] == 1 && end[2] == 6) {
@@ -380,7 +378,6 @@ function castling(beg, end){
             if (confirm("Сделать рокировку?")){
                 figurTable[0][5] = '';
                 figurTable[0][7] = '♚';
-                console.log(figurTable[0][7]);
             }
         }
     } else if (beg[1] == 8 && beg[2] == 1 && end[1] == 8 && end[2] == 4) {
@@ -388,7 +385,6 @@ function castling(beg, end){
             if (confirm("Сделать рокировку?")){
                 figurTable[7][5] = '';
                 figurTable[7][3] = '♔';
-                console.log(figurTable[7][3]);
             }
         }
     } else if (beg[1] == 8 && beg[2] == 8 && end[1] == 8 && end[2] == 6) {
@@ -396,7 +392,6 @@ function castling(beg, end){
             if (confirm("Сделать рокировку?")){
                 figurTable[7][5] = '';
                 figurTable[7][7] = '♔';
-                console.log(figurTable[7][7]);
             }
         }
     }
