@@ -1,0 +1,64 @@
+table {
+    font-size: 250%;
+    background-image: url(baum.png);
+    border: 1px solid #000000;
+    margin:10px auto;
+}
+
+td {
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    vertical-align: center;
+    font-weight: bold;
+}
+
+tr:nth-child(even) td:nth-child(odd) {
+    background-color: #8B4513;
+}
+
+tr:nth-child(odd) td:nth-child(even) {
+    background-color: #8B4513;
+}
+
+tr:nth-child(odd) td:nth-child(odd) {
+    background-color: #DAA520;
+}
+
+tr:nth-child(even) td:nth-child(even) {
+    background-color: #DAA520;
+}
+
+tr:last-child td:nth-child(odd),
+tr:first-child td:nth-child(even) {
+    background-image: url(baum.png);
+}
+
+tr:nth-child(even) td:first-child {
+    background-image: url(baum.png);
+}
+
+tr:nth-child(odd) td:last-child {
+    background-image: url(baum.png);
+}
+
+tr:last-child td:nth-child(even),
+tr:first-child td:nth-child(odd) {
+    background-image: url(baum.png);
+}
+
+tr:nth-child(odd) td:first-child {
+    background-image: url(baum.png);
+}
+
+tr:nth-child(even) td:last-child {
+    background-image: url(baum.png);
+}
+
+tr:first-child td:nth-child(-n + 10) {
+    transform: rotate(180deg);
+}
+
+td:last-child {
+    transform: rotate(180deg);
+}
